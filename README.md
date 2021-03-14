@@ -4,11 +4,11 @@ Vytvořit stránku s jednoduchou sekcí - přehled lektorů - dle zadaného desi
 
 ## Poznámky ke zpracování:
 
-* Pokud by ses na čemokliv zasekla, dej mi určitě vědět. Účelem úkolu je primárně ověřit, jak se nám bude efektivně spolupracovat. Až v druhé řadě si chci ověřit, jestli jseš nový Dan Abramov :)
-* Toto repo by mělo být připraveno tak, aby stačilo si ho stáhnout z gitu, nainstalovat balíčky (`yarn` nebo `npm i`) a spustit (`yarn dev` nebo `npm run dev`)
-* Design je dostupný na `zpl.io/VO4doXr` - v zeplinu si budeš muset vytvořit účet a pak tě musím pozvat ke spolupráci (napiš mi prosím, na který e-mail ses v zeplinu zaregistrovala)
+* Pokud by ses na čemokliv zasekla, dej mi určitě vědět. Účelem úkolu je primárně ověřit, jak se nám bude efektivně spolupracovat. Až v druhé řadě si chci ověřit, jestli jseš nový Dan Abramov :).
+* Toto repo by mělo být připraveno tak, aby stačilo si ho stáhnout z gitu, nainstalovat balíčky (`yarn` nebo `npm i`) a spustit (`yarn dev` nebo `npm run dev`).
+* Design je dostupný na `zpl.io/VO4doXr` - v zeplinu si budeš muset vytvořit účet a pak tě musím pozvat ke spolupráci (napiš mi prosím, na který e-mail ses v zeplinu zaregistrovala).
 * Jakmile bude hotovo, pushnout v samostatné branchi (např. `inteview-task`) do tohoto repozitáře. Pak mi napiš abych si udělal codereveiw.  
-* Data pro lektory - je nutné si je vyžádat pomocí API callu z adresy `/api/lecturers` (doporučuju využít axios)
+* Data pro lektory - je nutné si je vyžádat pomocí API callu z adresy `/api/lecturers` (doporučuju využít axios).
 
 ### Preferované npm packages
 

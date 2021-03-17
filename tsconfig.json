@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/components/Lectors/Lectors.js", "src/styled/variables.js", "src/styled/global.js", "src/styled/common.js"  ],
+, "src/components/Lectors/Lecturers.js", "src/styled/variables.js", "src/styled/global.js", "src/styled/common.js"  ],
   "exclude": [
     "node_modules"
   ]

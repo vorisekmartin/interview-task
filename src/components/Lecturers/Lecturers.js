@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Wrapper, FlexCenteredWrapper, Button } from '../../styled/common';
-import { CardsContainer, Card, LecturerImg, LecturerName, LecturerInfo, Title, TitleContainer, LecturerImgContainer } from './Lecturers.elements';
+import { CardsContainer, Card, LecturerImg, LecturerName, LecturerInfo, Title, TitleContainer, LecturerImgContainer, LecturerImgColor } from './Lecturers.elements';
 import axios from 'axios';
 
 function Lecturers({}) {
@@ -52,7 +52,7 @@ function Lecturers({}) {
                 <CardsContainer>
                     {lecturerData.slice(0,limit).map((lecturer) => 
                     <Card key={lecturer.id}>
-                        
+                        <LecturerImgColor />
                         <LecturerImgContainer>
                             <LecturerImg src={lecturer.image}/> >    
                         </LecturerImgContainer>

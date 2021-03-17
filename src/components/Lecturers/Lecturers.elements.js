@@ -37,7 +37,7 @@ export const Card = styled.div`
     margin-bottom: 20px;
 `
 
-export const LectorImgColor = styled.div`
+export const LecturerImgColor = styled.div`
     //border: solid 1px red;
     width: 130px;
     height: 130px;
@@ -47,7 +47,7 @@ export const LectorImgColor = styled.div`
     //padding-bottom: 3px;
     }
 `
-export const LectorImgContainer = styled.div`
+export const LecturerImgContainer = styled.div`
     width: 130px;
     height: 130px;
     border-radius: 50%; 
@@ -56,7 +56,7 @@ export const LectorImgContainer = styled.div`
     margin-top: 34px;
     }
 `
-export const LectorImg = styled.img`
+export const LecturerImg = styled.img`
     //border: solid 1px red;
     width: 130px;
     height: 130px; 
@@ -66,7 +66,7 @@ export const LectorImg = styled.img`
 `
 
 
-export const LectorName = styled.h3`
+export const LecturerName = styled.h3`
     //border: solid 1px red;
     //width: 135px;
     //height: 17px;
@@ -81,7 +81,7 @@ export const LectorName = styled.h3`
     margin-bottom: 14px;
     margin-top: 0px;
 `
-export const LectorInfo = styled.p`
+export const LecturerInfo = styled.p`
     //border: solid 1px red; 
     //width: 158px;
     //height: 38px;

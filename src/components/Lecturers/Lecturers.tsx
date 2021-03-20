@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Wrapper, FlexCenteredWrapper, Button } from '../../styled/common';
-import { CardsContainer, Card, LecturerImg, LecturerName, LecturerInfo, Title, TitleContainer, LecturerImgContainer, LecturerImgColor } from './Lecturers.elements';
+import { Container, Wrapper, Button, TitleContainer, Title } from '../../styled/common';
+import { CardsContainer, Card, LecturerImg, LecturerName, LecturerInfo, LecturerImgContainer, LecturerImgColor } from './Lecturers.elements';
 import axios from 'axios';
 
 function Lecturers({}) {
@@ -12,24 +12,6 @@ function Lecturers({}) {
     const showMoreItems = () => {
         setLimit(limit + 8);
     };
-
-
-    /*
-    const [loading, setLoading] = useState(false)
-    const [lecturers, setLecturers] = useState(() => [])
-
-     const loadMore = useCallback(() => {
-        setLoading(true)
-        return setTimeout(() => {
-            setLecturers((lecturers) => ([...lecturers, ...generateLecturers(8, lecturers.length)]))
-            setLoading(() => false)
-        },500)
-    },[setLecturers, setLoading])
-
-    useEffect(() => {
-        const timeout = loadMore()
-        return () => clearTimeout(timeout)
-    },[]) */
 
     useEffect(() => {
         axios
@@ -43,16 +25,18 @@ function Lecturers({}) {
 
     },[]);
 
+    let nutriLecturerData = lecturerData.filter(e => e.program == 'nutri')
+
     return (
         <Container lightGrey>
-            <FlexCenteredWrapper>
+            <Wrapper>
                 <TitleContainer>
                     <Title>Lektoři Nutri Akademie</Title>
                 </TitleContainer>
                 <CardsContainer>
-                    {lecturerData.slice(0,limit).map((lecturer) => 
+                    {nutriLecturerData.slice(0,limit).map((lecturer) => 
                     <Card key={lecturer.id}>
-                        <LecturerImgColor />
+                        <LecturerImgColor className="hoverLecturer"/>
                         <LecturerImgContainer>
                             <LecturerImg src={lecturer.image}/> >    
                         </LecturerImgContainer>
@@ -61,8 +45,10 @@ function Lecturers({}) {
                     </Card>
                     )}
                 </CardsContainer>
-                <Button onClick={showMoreItems}> VŠICHNI NUTRI LEKTOŘI</Button>
-            </FlexCenteredWrapper>
+                {limit<15 &&
+                <Button onClick={showMoreItems}> DALŠÍ NUTRI LEKTOŘI</Button>
+                }
+            </Wrapper>
         </Container>
     )
 }

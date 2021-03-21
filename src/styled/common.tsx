@@ -12,11 +12,12 @@ export const Wrapper = styled.div`
     justify-content: center;
     width: 85%;
     margin: 0 auto;
-    border: 0px solid blue;
     max-width: 1220px;
+    padding-bottom: 100px;
 
     @media only screen and (max-width: 450px)  {     
         width: 95%;
+        padding-bottom: 40px;
     }
 `
 
@@ -34,7 +35,6 @@ export const Title = styled.div`
     line-height: 1.15;
     font-family: 'Roboto';
     padding-top: 85px; 
-    //margin: 0 42px 49px 44px;
     text-align: center;
 
     @media only screen and (max-width: 718px)  {
@@ -53,7 +53,7 @@ export const Button = styled.button`
     font-weight: bold;
     font-size: 16px;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
-    margin: 0px auto 100px auto;
+    margin: 0 auto;
     cursor: pointer;
 
     :hover{

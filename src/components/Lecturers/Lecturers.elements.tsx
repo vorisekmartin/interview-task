@@ -1,18 +1,10 @@
 import styled from "styled-components"
-import { sizes, colors } from '../../styled/variables'
-
-export interface lecturerData {
-    id: number;
-    image: string;
-    name: string;
-    title: string;
-}
-
+import { colors } from '../../styled/variables'
 
 export const CardsContainer = styled.div`
     display: flex;
     justify-content: center;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 30px auto;
     flex-wrap: wrap;
 `
 
@@ -24,7 +16,7 @@ export const Card = styled.div`
     height: 317px;
     border-radius: 15px;
     box-shadow: 0px 12px 25px 0 rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    background-color: ${colors.white};
     margin-bottom: 20px;
     position: relative;
     margin-left: 10px;
@@ -32,7 +24,7 @@ export const Card = styled.div`
 
    :hover .hoverLecturer { 
         transition: all 0.2s ease-in-out;
-        background-image: linear-gradient(to top,  #D13D6B,  #D13D6B); 
+        background-image: linear-gradient(to top,  ${colors.pink},  ${colors.pink} ); 
     }
 `
 
@@ -40,13 +32,13 @@ export const LecturerImgColor = styled.div`
     width: 130px;
     height: 130px;
     border-radius: 50%; 
-    background-image: linear-gradient(to top, #51e0dd, #51c3e0);
+    background-image: linear-gradient(to top,${colors.turquoise}, ${colors.skyBlue});
     position: absolute;
     z-index:1;
     top: 38px;
     left: 80px;
-  
 `
+
 export const LecturerImgContainer = styled.div`
     width: 130px;
     height: 130px;
@@ -54,13 +46,12 @@ export const LecturerImgContainer = styled.div`
     overflow: hidden;
     margin-bottom: 24px;
     margin-top: 34px;
-    z-index:2;
-    
+    z-index: 2;   
 `
+
 export const LecturerImg = styled.img`
     width: 135px;
     height: 135px; 
- }
 `
 
 export const LecturerName = styled.h3`
@@ -86,5 +77,5 @@ export const LecturerInfo = styled.p`
     
     :first-letter {
         text-transform: uppercase;
-}
+    }
 `

@@ -19,9 +19,3 @@ export const colors = {
     black: `#000000`,
     white: `#FFFFFF`,
 };
-
-export const breakpoints = {
-    smartphone: `450px` ,
-    tablet: `960px` ,
-    desktop: `1280px`
-};
